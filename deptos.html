@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <ol>
+                <deptos-list
+                    v-for="item in dptos"
+                    v-bind:deptos="item"
+                    v-bind:key="item.id">
+                </deptos-list>
+            </ol>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
